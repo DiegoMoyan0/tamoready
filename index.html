@@ -14,8 +14,8 @@
 
 <body>
     <header>
-
-        <nav class="navbar navbar-expand-lg navbar-light ">
+        <!----------------------------------------------------NAVBAR ------------------------------------------------------>
+        <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -41,110 +41,95 @@
         </nav>
     </header>
     <main>
-
+        <!---------------------------------------------------- HERO------------------------------------------------------>
         <section class="hero">
+            <div class="hero-text">
+                <h1>Hola, <br>soy Emi Danieluk</h1>
+                <p>Coach Digital</p>
+            </div>
             <div class="hero-content">
                 <div class="hero-image">
                     <img src="perfil.jpg" alt="Imagen del hero">
                 </div>
-                <div class="hero-text">
-                    <h1>Hola, <br>
-                        soy Emi Danieluk</h1>
-                    <p>Coach Digital
-                    <p>
-                </div>
-                <a href="#contact" class="btn-contact">Contáctame</a>
+            </div>
+            <div>
+                <a href="#contact" class="btn-contact-hero">Contáctame</a>
             </div>
         </section>
+        <!---------------------------------------------------- INTRO ------------------------------------------------------>
+        <section id="about">
+            <div class="container-ABOUT">
+                <div class="row">
+                    <div class="col-md-6" id="texto-ABOUT">
+                        <h2 id="title-about"><b>ACERCA DE MÍ</b></h2>
+                        <hr class="linea-verde">
+                        <p class="parati TEXT-CENTER">
+                            Licenciado en marketing, me especializo en ecosistemas digitales. También poseo un posgrado en
+                            finanzas, conocimiento que hace posicionarme en el mundo de los indicadores y las mediciones.
+            
+                            Hace algunos años decidí armar "Tamo Ready", algo así como una agencia boutique de marketing
+                            digital y la verdad que me va muy bien.
+            
+                            Mas abajo te cuento...
+                        </p>
+                    </div>
+                    <div class="col-md-6" id="caja-ABOUT">
+                        <video autoplay loop muted style="width: 100%; height: 100%;">
+                            <source src="/ACERCA.mp4" type="video/mp4">
+                            Tu navegador no soporta videos HTML5.
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <!---------------------------------------------------- SERVICIOS------------------------------------------------------>
 
-        <!-- SECTION INTRO -->
-        <div id="intro" class="container-md py-5">
-            <div class="d-flex flex-column flex-md-row gap-4 justify-content-center">
-                <div class="info d-flex gap-4 flex-column justify-content-around">
-                    <h2 class="text-center">
-                        Acerca de mi </h2>
-                    <hr class="linea-verde">
-                    <p class="m-0">
-                        Licenciado en marketing, me especializo en ecosistemas digitales. Tambien poseo un posgrado en
-                        finanzas, conocimiento que hace posicionarme en el mundo de los indicadores y las mediciones.
-
-                        Hace algunos años decidi armar “Tamo Ready”, algo asi como una agencia boutique de marketing
-                        digital y
-                        la verdad que me va muy bien.
-
-                        Mas abajo te cuento...
-                    </p>
-                    <div class="img-intro align-self-center"></div>
+        <div class="container mt-5">
+            <h2 class="text-center">SERVICIOS QUE ESTOY BRINDANDO</h2>
+            <hr class="linea-verde-service">
+            <div class="row text-center">
+                <div class="col-md-3">
+                    <div class="card mb-4">
+                        <img src="/images/ads.gif" class="card-img-top" alt="Gift Card 1">
+                        <div class="card-body card-bottom-text">
+                            <h5 class="card-title">ADS</h5>
+                            <p class="card-text">Desarrollo campañas publicitarias en Google, Meta (Facebook e Instagram) y TikTok. Enfocadas en branding y conversión.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card mb-4">
+                        <img src="/images/redes-sociales.gif" class="card-img-top" alt="Gift Card 2">
+                        <div class="card-body card-bottom-text">
+                            <h5 class="card-title">Redes Sociales</h5>
+                            <p class="card-text">Interacción permanente y moderación con tu público. Creación y programación de contenido de alto impacto.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card mb-4 ">
+                        <img src="/images/auvisual.gif" class="card-img-top" alt="Gift Card 3">
+                        <div class="card-body card-bottom-text">
+                            <h5 class="card-title">AUDIOVISUAL</h5>
+                            <p class="card-text">Fotografía social. Recreación de experiencias. Fotoproducto. Video. Reels. Storytelling.
+                                <br><br>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card mb-4 ">
+                        <img src="/images/webdesign.gif" class="card-img-top" alt="Gift Card 4">
+                        <div class="card-body card-bottom-text">
+                            <h5 class="card-title">Diseño Web</h5>
+                            <p class="card-text">Creación y administración de sitios web. Integración con redes sociales. <br><br><br> </p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-
-        <!-- SECTION SERVICES -->
-        <section id="servicios">
-            <div class="services container-md py-5">
-                <div class="grupo-1">
-                    <h2 >SERVICIOS QUE ESTOY BRINDANDO</h2>
-                    <hr class="linea-verde">
-                </div>
-                <div class="grupo-2 w-auto d-flex flex-lg-row flex-column justify-content-between align-items-center">
-                    <div class="services-container">
-                        <img src="images/ADS.jpg" alt="restaurante" />
-                        <h4 class="services-subtitle">ADS</h4>
-                        <div
-                            class="services-box__hover d-flex flex-column align-items-center justify-content-center h-100">
-                            <h4>ADS</h4>
-                            <p>
-                                Desarrollo campañas publicitarias en Google, Meta (facebook e Instagram) y TikTok.
-                                enfocadas en branding y conversion
-                            </p>
-                        </div>
-                    </div>
-                    <div class="services-container">
-                        <img src="images/COMDIGITAL.jpg" alt="Gimnasio" />
-                        <h4 class="services-subtitle">REDES SOCIALES</h4>
-                        <div
-                            class="services-box__hover d-flex flex-column align-items-center justify-content-center h-100">
-                            <h4>COMDIGITAL</h4>
-
-                            <p>
-                                Interaccion permanente y moderacion con tu publico.
-                                Creacion y programacion de contenido de alto impacto
-                            </p>
-                        </div>
-                    </div>
-                    <div class="services-container">
-                        <img src="images/audiovisual.jpg" alt="Spa" />
-                        <h4 class="services-subtitle">audiovisual</h4>
-                        <div
-                            class="services-box__hover d-flex flex-column align-items-center justify-content-center h-100">
-                            <h4>audiovisual</h4>
-
-                            <p>
-                                Fotografia social.
-                                Recreacion de experiencias.
-                                Fotoproducto
-                                Video. Reels. Historytelling
-                            </p>
-                        </div>
-                    </div>
-                    <div class="services-container">
-                        <img src="images/webdesign.jpg" alt="Spa" />
-                        <h4 class="services-subtitle">webdesign</h4>
-                        <div
-                            class="services-box__hover d-flex flex-column align-items-center justify-content-center h-100">
-                            <h4>webdesign</h4>
-
-                            <p>
-                                Creacion y administracion de sitios web.
-                                Integracion con redes sociales
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- SECTION INTRO -->
+        <!---------------------------------------------------- DIFERENCIA------------------------------------------------------>
         <div id="intro" class="container-md py-5">
             <div class="d-flex flex-column flex-md-row gap-4 justify-content-center">
                 <div class="info d-flex gap-4 flex-column justify-content-around">
@@ -152,7 +137,7 @@
                         COMO ME DIFERENCIO DEL RESTO?
                     </h2>
                     <hr class="linea-verde">
-                    <p class="m-0">
+                    <p class="m-0 text-center">
                         La idea es: pocos clientes, cercania y mucha dedicacion. <br><br>
                         Me especializo en liderar equipos de trabajo especificos para cada cuenta. Selecciono los
                         perfiles de mis co-equipers segun cada necesidad. <br><br>
@@ -164,7 +149,7 @@
                 </div>
             </div>
         </div>
-
+        <!---------------------------------------------------- CONTACTO------------------------------------------------------>
         <h2 id="title-contact">
             DEJAME TU CONSULTA
         </h2>
@@ -200,7 +185,9 @@
                     </div>
                     <div class="mb-3 form-check">
                         <input type="checkbox" class="form-check-input" id="termsCheckbox" required />
-                        <label class="form-check-label" for="termsCheckbox">     Acepto que mis datos serán utilizados con el objetivo de brindarme servicios, productos y asistencia, conformes a la política de privacidad.</label>
+                        <label class="form-check-label" for="termsCheckbox"> Acepto que mis datos serán utilizados con
+                            el objetivo de brindarme servicios, productos y asistencia, conformes a la política de
+                            privacidad.</label>
                         <div class="invalid-feedback">
                             Debe aceptar los términos y condiciones para continuar.
                         </div>
@@ -212,7 +199,7 @@
             </form>
     </main>
 
-    <!-- SECTION FOOTER -->
+    <!---------------------------------------------------- FOOTER------------------------------------------------------>
     <footer class="pie-pagina">
         <div class="grupo-2">
             <div class="container-md d-flex align-items-center justify-content-between flex-column flex-sm-row">
@@ -221,14 +208,15 @@
                     <a href="#" class="icon-rd"><i class="bi bi-instagram"></i></a>
                     <a href="#" class="icon-rd"><i class="bi bi-twitter"></i></a>
                 </div>
-                
+
                 <small class="align-self-center">
                     &copy; 2023 Emi Danieluk - Todos los Derechos Reservados.
                 </small>
                 <div class="contacto">
                     <span><i class="bi bi-telephone"></i> +123456789</span><br>
-                    <span><i class="bi bi-envelope"></i> <a href="mailto:correo@example.com">correo@example.com</a></span>
-                  </div>
+                    <span><i class="bi bi-envelope"></i> <a
+                            href="mailto:correo@example.com">correo@example.com</a></span>
+                </div>
             </div>
         </div>
     </footer>
