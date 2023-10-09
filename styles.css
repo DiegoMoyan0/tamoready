@@ -297,3 +297,43 @@ video::-webkit-media-controls {
 .pie-pagina .container-md small {
   font-size: 0.75rem;
 }
+
+.deslizable {
+  font-size: 2.5rem;
+  position: fixed;
+  right: 30px;
+  bottom: 20px;
+  z-index: 20;
+  background: linear-gradient(50deg, #80ef03, #2c5a404d);
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 2px 5px 5px rgba(12, 12, 12, 0.8);
+  animation: deslizable-animation 700ms linear 3s infinite alternate;
+}
+
+.deslizable a {
+  text-decoration: none; /* Evita el subrayado del enlace */
+}
+
+.deslizable i {
+  color: white;
+  font-size: 2.2rem;
+}
+
+.deslizable i:hover {
+  opacity: 0.9;
+}
+
+@keyframes deslizable-animation {
+  0% {
+    transform: translateY(0px);
+  }
+
+  100% {
+    transform: translateY(-3px);
+  }
+}
