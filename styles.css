@@ -163,7 +163,24 @@ h2 {
 
 
 /* <---------------------------------------------------- INTRO------------------------------------------------------> */
+/* Estilo inicial oculto */
+.hidden {
+  opacity: 0;
+  transform: translateX(-50px);
+  transition: opacity 1s ease, transform 1s ease;
+}
 
+/* Estilo visible */
+.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Animación de carga para la barra */
+.linea-verde.loading {
+  transition: width 2s ease-in-out;
+  width: 30%; /* Ancho completo */
+}
 
 video::-webkit-media-controls {
   display: none;
@@ -195,14 +212,6 @@ video::-webkit-media-controls {
 }
 
 /* <---------------------------------------------------- SERVICES------------------------------------------------------> */
-.linea-verde-service {
-  width: 40%;
-  border: none; 
-  height: 2px; 
-  background-color: #49A078; 
-  margin:  10px auto 30px auto; 
-
-}
 .card {
   height: 100%;
 }
@@ -216,6 +225,7 @@ video::-webkit-media-controls {
 }
 
 /* <---------------------------------------------------- CONTACTO------------------------------------------------------> */
+
 .btn-contact {
   display: inline-block;
   padding: 10px 20px;
