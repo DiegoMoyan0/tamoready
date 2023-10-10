@@ -64,7 +64,7 @@ body {
 /* <---------------------------------------------------- NAVBAR------------------------------------------------------> */
 
 .navbar {
-  background-color: #F4F8FD;
+  background-color: rgba(244, 248, 253, 0.5);
 }
 
 .navbar-toggler-icon {
