@@ -271,18 +271,85 @@ video::-webkit-media-controls {
   color: black;
 }
 
-.icon-rd {
-  display: inline-block;
-  padding: 0 0.9375rem;
-  text-decoration: none;
-  color: black;
-  margin-right: 0.625rem;
-  text-align: center;
-  transition: all 300ms ease;
+/*----------------------------------------- ICONOS --------------------------------------------------*/
+.icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.icon-rd:hover {
-  color: #a47e1b;
+.icon-fb {
+  color: blue;
+}
+
+.icon-ig {
+  color: violet;
+
+}
+
+.icon-wpp {
+  color: lightblue;
+}
+
+.icon-fb,
+.icon-ig,
+.icon-wpp {
+  position: relative;
+  width: 100%;
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+  padding: 0.8rem;
+  border-radius: 50%;
+  background-color: black;
+  transition: background-color 0.2s ease-in-out;
+  margin: 1rem;
+}
+
+.icon-text {
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 0.8rem;
+  display: none;
+}
+
+.icon-fb .icon-text {
+  background-color: blue;
+}
+
+.icon-ig .icon-text {
+  background-color: #ab32bb;
+
+}
+
+.icon-wpp .icon-text {
+  background-color: lightblue;
+}
+
+.icon-fb:hover {
+  background-color: blue;
+  color: white;
+}
+
+.icon-ig:hover {
+  background-color: #ab32bb;
+  color: white;
+}
+
+.icon-wpp:hover {
+  background-color: lightblue;
+  color: white;
+}
+
+.icon-fb:hover .icon-text,
+.icon-ig:hover .icon-text,
+.icon-wpp:hover .icon-text {
+  display: block;
 }
 
 .pie-pagina .container-md {
