@@ -183,7 +183,7 @@ h2 {
   }
 }
 
-@media (min-width: 769px) and (max-width: 1024px) {
+@media (min-width: 769px) and (max-width: 1070px) {
   .hero {}
 
   .hero-text h1 {
@@ -213,7 +213,7 @@ h2 {
   }
 }
 
-@media (min-width: 1025px) {
+@media (min-width: 1200px) {
   .hero {
     padding: 60px 0;
   }
@@ -273,10 +273,11 @@ h2 {
   background-size: contain !important;
   background-repeat: no-repeat !important;
   background-position: center !important;
-  height: 40vh;
+  max-height: 60vh;
+  max-width: 60vw;
 }
 .TEXT-CENTER{
-  width: 60%;
+  width: 50%;
 }
 #texto-ABOUT {
   padding: 20px;
