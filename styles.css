@@ -60,6 +60,7 @@ body {
   outline: 0.0625rem solid #49A078;
   color: #f2ede3;
 }
+
 .linea-verde {
   width: 40%;
   border: none;
@@ -89,8 +90,13 @@ h2 {
   transition: width 2s ease-in-out;
   width: 30%;
 }
+
+p {
+  font-weight: 540;
+}
+
 /* <---------------------------------------------------- NAVBAR------------------------------------------------------> */
-header{
+header {
   background-color: #F4F8FD;
 }
 
@@ -140,7 +146,7 @@ header{
 }
 
 .btn-contact-hero {
-margin-bottom: 5px;
+  margin-bottom: 5px;
   padding: 5px 10px;
   background-color: #007bff;
   color: #fff;
@@ -157,9 +163,11 @@ margin-bottom: 5px;
   .hero-text h1 {
     font-size: 2rem;
   }
+
   .hero-text p {
     font-size: 1.6rem;
   }
+
   .btn-contact-hero {
     margin-top: 20px;
     margin-right: 20px;
@@ -167,10 +175,12 @@ margin-bottom: 5px;
     font-size: 18px;
   }
 }
+
 @media (min-width: 768px) {
   .hero-text h1 {
     font-size: 3rem;
   }
+
   .hero-text p {
     font-size: 2rem;
   }
@@ -181,10 +191,11 @@ margin-bottom: 5px;
     font-size: 4rem;
 
   }
-  
+
   .hero-text p {
     font-size: 18px;
   }
+
   .btn-contact-hero {
     margin-top: 20px;
     margin-right: 20px;
@@ -192,6 +203,7 @@ margin-bottom: 5px;
     font-size: 18px;
   }
 }
+
 /* <---------------------------------------------------- ABOUT ------------------------------------------------------> */
 
 .container-ABOUT {
@@ -323,7 +335,7 @@ margin-bottom: 5px;
   padding: 0.8rem;
   border-top-left-radius: 60%;
   border-bottom-right-radius: 60%;
-  background-color:#49A078;
+  background-color: #49A078;
   transition: background-color 0.2s ease-in-out;
   margin: 1rem;
 }
