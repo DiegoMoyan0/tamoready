@@ -60,10 +60,39 @@ body {
   outline: 0.0625rem solid #49A078;
   color: #f2ede3;
 }
+.linea-verde {
+  width: 40%;
+  border: none;
+  height: 2px;
+  background-color: #49A078;
+  margin: auto;
+}
+
+h2 {
+  margin: 0 auto;
+  align-items: center;
+  text-align: center;
+}
+
+.hidden {
+  opacity: 0;
+  transform: translateX(-50px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.linea-verde.loading {
+  transition: width 2s ease-in-out;
+  width: 30%;
+}
+/* <---------------------------------------------------- NAVBAR------------------------------------------------------> */
 header{
   background-color: #F4F8FD;
 }
-/* <---------------------------------------------------- NAVBAR------------------------------------------------------> */
 
 .navbar {
   background-color: rgba(244, 248, 253, 0.5);
@@ -163,37 +192,7 @@ margin-bottom: 5px;
     font-size: 18px;
   }
 }
-
-.linea-verde {
-  width: 40%;
-  border: none;
-  height: 2px;
-  background-color: #49A078;
-  margin: auto;
-}
-
-h2 {
-  margin: 0 auto;
-  align-items: center;
-  text-align: center;
-}
-
-/* <---------------------------------------------------- INTRO------------------------------------------------------> */
-.hidden {
-  opacity: 0;
-  transform: translateX(-50px);
-  transition: opacity 1s ease, transform 1s ease;
-}
-
-.visible {
-  opacity: 1;
-  transform: translateX(0);
-}
-
-.linea-verde.loading {
-  transition: width 2s ease-in-out;
-  width: 30%;
-}
+/* <---------------------------------------------------- ABOUT ------------------------------------------------------> */
 
 .container-ABOUT {
   margin: 5rem auto;
@@ -212,11 +211,8 @@ h2 {
   max-height: 60vh;
   max-width: 60vw;
 }
-.TEXT-CENTER{
-  width: 50%;
-}
+
 #texto-ABOUT {
-  padding: 20px;
   display: flex;
   text-align: center;
   flex-direction: column;
