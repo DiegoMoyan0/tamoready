@@ -54,41 +54,39 @@
             </div>
         </section>
         <!---------------------------------------------------- INTRO ------------------------------------------------------>
-        <section id="about">
-            <div class="container-ABOUT">
-                <div class="">
-                    <div class="col-md-12 text-center" id="texto-ABOUT">
-                        <h2 id="title-about" class="hidden"><b>ACERCA DE MÍ</b></h2>
-                        <hr class="linea-verde hidden"><br>
-                        <p class="parati m-0 text-center">
-                            Licenciado en marketing, me especializo en ecosistemas digitales. También poseo un posgrado
-                            en finanzas, conocimiento que hace posicionarme en el mundo de los indicadores y las
-                            mediciones. <br><br>
-                            Hace algunos años decidí armar "Tamo Ready", algo así como una agencia boutique de marketing
-                            digital y la verdad que me va muy bien.
-                            <br><br>
-                            Mas abajo te cuento...
-                        </p>
-                        <img id="caja-ABOUT" src="/about.gif" alt="">
-                    </div>
+        <section id="about" class="container-md py-5">
+            <div class="d-flex flex-column flex-md-row gap-4 justify-content-center">
+                <div class="info d-flex gap-4 flex-column justify-content-around" id="texto-ABOUT">
+                    <h2  id="title-about" class="hidden">
+                        <b>ACERCA DE MÍ</b>
+                    </h2>
+                    <hr class="linea-verde" id="linea-verde-about">
+                    <p class=" text-center">
+                        Licenciado en marketing, me especializo en ecosistemas digitales. También poseo un posgrado
+                        en finanzas, conocimiento que hace posicionarme en el mundo de los indicadores y las
+                        mediciones. <br><br>
+                        Hace algunos años decidí armar "Tamo Ready", algo así como una agencia boutique de marketing
+                        digital y la verdad que me va muy bien.
+                        <br><br>
+                        Mas abajo te cuento...
+                    </p>
                 </div>
             </div>
         </section>
-
         <!---------------------------------------------------- SERVICIOS------------------------------------------------------>
 
         <div class="container mt-5" id="services">
-            <h2 class="text-center"><b>SERVICIOS QUE ESTOY BRINDANDO</b></h2>
-            <hr class="linea-verde">
+            <h2 class="text-center" id="title-services"><b>SERVICIOS QUE ESTOY BRINDANDO</b></h2>
+            <hr class="linea-verde" id="linea-verde-services">
             <br>
             <div class="row text-center">
                 <div class="col-md-3 mb-4">
                     <div class="card mb-4">
                         <img src="/images/ads.gif" class="card-img-top" alt="Gift Card 1">
                         <div class="card-body card-bottom-text">
-                            <h5 class="card-title">ADS</h5>
+                            <h5 class="card-title"><b>ADS</b></h5>
                             <p class="card-text">Desarrollo campañas publicitarias en Google, Meta (Facebook e
-                                Instagram) y TikTok. Enfocadas en branding y conversión.</p>
+                                Instagram) y TikTok, enfocadas en branding y conversión.</p>
                         </div>
                     </div>
                 </div>
@@ -96,7 +94,7 @@
                     <div class="card mb-4">
                         <img src="/images/redes-sociales.gif" class="card-img-top" alt="Gift Card 2">
                         <div class="card-body card-bottom-text">
-                            <h5 class="card-title">Redes Sociales</h5>
+                            <h5 class="card-title"><b>REDES SOCIALES</b></h5>
                             <p class="card-text">Interacción permanente y moderación con tu público. Creación y
                                 programación de contenido de alto impacto.</p>
                         </div>
@@ -106,7 +104,7 @@
                     <div class="card mb-4 ">
                         <img src="/images/auvisual.gif" class="card-img-top" alt="Gift Card 3">
                         <div class="card-body card-bottom-text">
-                            <h5 class="card-title">AUDIOVISUAL</h5>
+                            <h5 class="card-title"><b>AUDIOVISUAL</b></h5>
                             <p class="card-text">Fotografía social. Recreación de experiencias. Fotoproducto. Video.
                                 Reels. Storytelling.
                                 <br><br>
@@ -118,7 +116,7 @@
                     <div class="card mb-4 ">
                         <img src="/images/webdesign.gif" class="card-img-top" alt="Gift Card 4">
                         <div class="card-body card-bottom-text">
-                            <h5 class="card-title">Diseño Web</h5>
+                            <h5 class="card-title"><b>DISEÑO WEB</b></h5>
                             <p class="card-text">Creación y administración de sitios web. Integración con redes
                                 sociales. <br><br><br> </p>
                         </div>
@@ -127,14 +125,14 @@
             </div>
         </div>
         <!---------------------------------------------------- DIFERENCIA------------------------------------------------------>
-        <div id="intro" class="container-md py-5">
+        <section id="intro" class="container-md py-5">
             <div class="d-flex flex-column flex-md-row gap-4 justify-content-center">
-                <div class="info d-flex gap-4 flex-column justify-content-around">
-                    <h2>
+                <div class="info d-flex gap-4 flex-column justify-content-around" >
+                    <h2 id="title-dife" class="hidden">
                         <b>COMO ME DIFERENCIO DEL RESTO?</b>
                     </h2>
-                    <hr class="linea-verde">
-                    <p class="m-0 text-center">
+                    <hr class="linea-verde" id="linea-verde-dife">
+                    <p class=" text-center">
                         La idea es: pocos clientes, cercania y mucha dedicacion. <br><br>
                         Me especializo en liderar equipos de trabajo especificos para cada cuenta. Selecciono los
                         perfiles de mis co-equipers segun cada necesidad. <br><br>
@@ -145,13 +143,13 @@
                     </p>
                 </div>
             </div>
-        </div>
+        </section>
         <!---------------------------------------------------- CONTACTO------------------------------------------------------>
-        <h2 id="title-contact">
+        <h2 id="title-contact" class="hidden">
             <b>DEJAME TU CONSULTA</b>
         </h2>
         <p id="p-contact"> Te responderemos cuanto antes</p>
-        <hr class="linea-verde">
+        <hr class="linea-verde" id="linea-verde-contact">
         <div id="container-contact" class="row mx-auto">
             <!-- Form -->
             <form class="col-12 col-lg-5 p-0 mb-lg-0 mb-4 needs-validation" novalidate>
