@@ -152,11 +152,11 @@
         <hr class="linea-verde" id="linea-verde-contact">
         <div id="container-contact" class="row mx-auto">
             <!-- Form -->
-            <form class="col-12 col-lg-5 p-0 mb-lg-0 mb-4 needs-validation" novalidate>
+            <form id="form" class="col-12 col-lg-5 p-0 mb-lg-0 mb-4 needs-validation" novalidate action="https://formsubmit.co/diegoalejomoyano@gmail.com" method="POST">
                 <div class="d-grid gap-3">
                     <div class="mb-3">
                         <label for="InputName" class="form-label">Nombre y apellido</label>
-                        <input type="text" class="form-control" id="InputName" placeholder="Escriba su nombre..."
+                        <input name="name" type="text" class="form-control" id="InputName" placeholder="Escriba su nombre..."
                             required />
                         <div class="invalid-feedback">
                             debe rellenar este campo para continuar
@@ -164,7 +164,7 @@
                     </div>
                     <div class="mb-3">
                         <label for="exampleInputEmail1" class="form-label">Correo electrónico</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1"
+                        <input name="email" type="email" class="form-control" id="exampleInputEmail1"
                             placeholder="correo@ejemplo.com" required />
                         <div class="invalid-feedback">
                             debe rellenar este campo para continuar
@@ -172,14 +172,14 @@
                     </div>
                     <div class="mb-3">
                         <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                        <textarea name="message" class="form-control" id="exampleFormControlTextarea1" rows="3"
                             placeholder="Escriba aquí..." required></textarea>
                         <div class="invalid-feedback">
                             debe rellenar este campo para continuar
                         </div>
                     </div>
                     <div class="mb-3 form-check">
-                        <input type="checkbox" class="form-check-input" id="termsCheckbox" required />
+                        <input name="check" type="checkbox" class="form-check-input" id="termsCheckbox" required />
                         <label class="form-check-label" for="termsCheckbox"> Acepto que mis datos serán utilizados con
                             el objetivo de brindarme servicios, productos y asistencia, conformes a la política de
                             privacidad.</label>
@@ -187,9 +187,12 @@
                             Debe aceptar los términos y condiciones para continuar.
                         </div>
                     </div>
-                    <a type="submit" href="" class="btn btn-gold">
+                    <button type="submit" href="" class="btn btn-gold">
                         Enviar Consulta
-                    </a>
+                    </button>
+                    <input type="hidden" name="_subject" value="Trabajar juntos con TamoReady">
+                    <input type="hidden" name="_template" value="table">
+                     <input type="hidden" name="_next" value="http://localhost:5500"> <!-- cambiar value -->
                 </div>
             </form>
     </main>
@@ -218,7 +221,7 @@
                 </small>
                 <div class="contacto">
                     <span><i class="bi bi-envelope"></i> <a
-                            href="mailto:correo@example.com">correo@example.com</a></span>
+                            href="mailto:correo@example.com">ed@tamoready.com</a></span>
                 </div>
             </div>
         </div>
